@@ -6,11 +6,11 @@
         "vitasdk": "vitasdk"
       },
       "locked": {
-        "lastModified": 1768328905,
-        "narHash": "sha256-tm63itiBIhb0I6X5nWVCEQsm1ed1Qtq+u+2oAgQp+m0=",
+        "lastModified": 1768329832,
+        "narHash": "sha256-H5cf5QQikKso9pdJ1awAxuzgxzhy4Wdg9bQby6VDoaQ=",
         "owner": "SkyLeite",
         "repo": "hbnix",
-        "rev": "a8820500aeabd55111cdc02946a2960c7c181980",
+        "rev": "2eacf64de2228f1af53cd83912ddec37f73b118d",
         "type": "github"
       },
       "original": {

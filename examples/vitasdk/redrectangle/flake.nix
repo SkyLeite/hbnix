@@ -27,14 +27,12 @@
           "aarch64-linux"
           "aarch64-darwin"
         ] (system: function (mkPkgs system) system);
-
-      hbn = forAllSystems (pkgs: system: hbnix.lib."${system}");
     in
     {
       packages = forAllSystems (
         pkgs: system: {
           default = (
-            hbn.mkVitaPackage {
+            hbnix.lib."${system}".mkVitaPackage {
               name = "redrectangle";
               src = ./.;
               buildInputs = [ pkgs.vitaPackages.sdl2 ];
