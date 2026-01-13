@@ -14,15 +14,15 @@
       vitasdk,
     }:
     let
+      mkOverlay = system: final: prev: {
+        vitaPackages = vitasdk.packages."${system}";
+      };
+
       mkPkgs =
         system:
         import nixpkgs {
           system = system;
-          overlays = [
-            (final: prev: ({
-              vitaPackages = vitasdk.packages."${system}";
-            }))
-          ];
+          overlays = [ (mkOverlay system) ];
         };
 
       forAllSystems =
@@ -37,6 +37,7 @@
     in
     {
       checks = forAllSystems (pkgs: system: import ./checks.nix (pkgs // { self = lib."${system}"; }));
-      lib = builtins.trace lib.x86_64-linux.mkVitaPackage lib;
+      lib = lib;
+      overlays = forAllSystems (pkgs: system: mkOverlay system);
     };
 }
