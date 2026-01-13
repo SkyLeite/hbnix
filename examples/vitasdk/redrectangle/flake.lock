@@ -1,0 +1,96 @@
+{
+  "nodes": {
+    "hbnix": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "vitasdk": "vitasdk"
+      },
+      "locked": {
+        "lastModified": 1768328905,
+        "narHash": "sha256-tm63itiBIhb0I6X5nWVCEQsm1ed1Qtq+u+2oAgQp+m0=",
+        "owner": "SkyLeite",
+        "repo": "hbnix",
+        "rev": "a8820500aeabd55111cdc02946a2960c7c181980",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SkyLeite",
+        "ref": "main",
+        "repo": "hbnix",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1768127708,
+        "narHash": "sha256-1Sm77VfZh3mU0F5OqKABNLWxOuDeHIlcFjsXeeiPazs=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "ffbc9f8cbaacfb331b6017d5a5abb21a492c9a38",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1748162331,
+        "narHash": "sha256-rqc2RKYTxP3tbjA+PB3VMRQNnjesrT0pEofXQTrMsS8=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "7c43f080a7f28b2774f3b3f43234ca11661bf334",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1768127708,
+        "narHash": "sha256-1Sm77VfZh3mU0F5OqKABNLWxOuDeHIlcFjsXeeiPazs=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "ffbc9f8cbaacfb331b6017d5a5abb21a492c9a38",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "hbnix": "hbnix",
+        "nixpkgs": "nixpkgs_3"
+      }
+    },
+    "vitasdk": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1761173557,
+        "narHash": "sha256-kL2GJguumQjbcDPFg1ykFnRvoIwW0xvOr+/IWOojEcg=",
+        "owner": "sleirsgoevy",
+        "repo": "vitasdk.nix",
+        "rev": "91378cb826a6cb6326fb54e4deee331dfd7bb445",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sleirsgoevy",
+        "repo": "vitasdk.nix",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
