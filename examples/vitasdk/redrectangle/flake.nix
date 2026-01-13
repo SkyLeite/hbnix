@@ -17,7 +17,7 @@
         system:
         import nixpkgs {
           inherit system;
-          overlays = [ hbnix.overlays."${system}" ];
+          overlays = [ hbnix.overlays.default ];
         };
 
       forAllSystems =
