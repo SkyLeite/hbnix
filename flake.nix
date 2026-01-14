@@ -39,5 +39,6 @@
       checks = forAllSystems (pkgs: system: import ./checks.nix (pkgs // { self = lib."${system}"; }));
       lib = lib;
       overlays.default = overlay;
+      packages = forAllSystems (pkgs: system: pkgs.vitaPackages);
     };
 }
